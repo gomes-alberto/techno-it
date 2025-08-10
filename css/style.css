@@ -1,0 +1,929 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* rezetando também estilos que têm a haver com listas, links etc */
+    list-style-type: none;
+    text-decoration: none;
+    /* propiedade para fazer a página rolar */
+    scroll-behavior: smooth;
+}
+
+/* html {
+    overflow-x: hidden;
+} */
+
+body {
+    background-color: var(--cor-branca);
+    transition: .5s;
+}
+
+/* Criacão de Variaveis nas cores */
+:root {
+    --cor-botao: #025ce2;
+    --cor-fundo: #000000;
+    --cor-branca: #ffffff;
+    --cor-texto-principal: #0968df;
+    --cor-fundo-especifico: #151515;
+    --cor-sub-titulo: #ec9d83;
+}
+
+/* criando estilo para uma classe dark mode para alterar o tema do site */
+.estilo-dark-mode {
+    background-color: var(--cor-fundo);
+}
+
+/* ==========INÍCIO DOS ESTILOS GERAIS DO SITE========== */
+.interface {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/* header */ 
+.btn-geral {
+    color: var(--cor-branca);
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: var(--cor-botao);
+    border-radius: 20px;
+    border: none;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.btn-geral:hover {
+    box-shadow: 0 0 15px var(--cor-botao);
+}
+
+.titulo {
+    font-size: 1.5em;
+    font-weight: 430;
+    color: var(--cor-texto-principal);
+    text-align: center;
+    padding-top: 20px;
+} 
+
+.sub-titulo {
+    display: block;
+    color: var(--cor-sub-titulo);
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+
+    padding-bottom: 30px;
+}
+
+.footer-titulo {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--cor-botao);
+    margin-bottom: 20px;
+
+}
+/* ==========FIM DOS ESTILOS GERAIS DO SITE========== */
+
+/* INÍCIO DO ESTILO DO MENU DINAMICO */
+header.rolar {
+    background-color: var(--cor-fundo);
+    padding: 20px 0;
+    /* box-shadow: 0 0 10px var(--cor-fundo-especifico); */
+}
+/* FIM DO ESTILO DO MENU DINAMICO */
+
+
+/* ESTILOS NÃO GERAIS (NORMAIS) */
+header {
+    width: 100%;
+    padding: 35px 0;
+    /* transformando o HEADER para ficar transparente ou seja fixo a tela */
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: 100;
+}
+
+header .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img {
+    max-width: 180px;
+}
+
+header .menu-desktop nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+header .menu-desktop nav ul li a {
+    color: var(--cor-branca);
+    font-size: 17px;
+    font-weight: 500;
+    padding: 10px 5px;
+    /* transformando o (a) em um elemento inline block para  aceitar a transformação do hover */
+    display: inline-block;
+    transition: .5s;
+}
+
+header .menu-desktop nav ul li a:hover {
+    color: var(--cor-botao);
+    font-weight: 600;
+}
+
+/* Configurando o botão dark mode */
+header .dark-mode button {
+    width: 50px;
+    height: 50px;
+}
+
+header .dark-mode button {
+    background-color: var(--cor-branca);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    transition: .5s;
+}
+
+header .dark-mode img {
+    width: 20px;
+}
+ 
+header .dark-mode .modo-claro-sol {
+    display: none;
+}
+
+/* ============== Etilizando o Main ================= */
+/* Estilo da Scecção Home */
+.home {
+    height: 100vh;
+    background-image: url(../imagens/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--cor-branca);
+    /* propriedade para deixar a imagens estática e 
+    ciar o efeit paralax */
+    background-attachment: fixed;
+}
+
+.home .interface {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.home .home-texto h1 {
+    font-size: 3em;
+    line-height: 65px;
+    font-weight: 200;
+}
+
+.home .home-texto h1 span {
+    display: block;
+    font-weight: 700;
+}
+
+.home .home-texto p {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.home .home-texto p span {
+    display: block;
+    margin-top: 6px;
+    font-weight: 600;
+}
+
+.home .home-texto .btn-geral {
+    margin-top: 10px;
+}
+
+/* .home > .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.801);
+    width: 100%;
+    height: 100%;
+
+    z-index: 1;
+} */
+/* ---------------------------------------------------------------------------------- */
+
+
+/* Estilo da Secção de SERVIÇOS */
+.servico {
+    padding: 100px 0px 10px 0px;
+}
+
+.servico .servico-container-a {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 20px;
+}
+
+.servico .servico-box-a {
+    padding: 30px;
+    background-color: var(--cor-branca);
+    border-radius: 6px;
+    text-align: center;
+    height: 250px;
+    transition: .5s;
+    box-shadow: 0 0 10px var(--cor-botao);
+}
+
+.servico .servico-box-a:hover {
+    transform: scale(1.03);
+}
+
+.servico .servico-box-a img {
+    width: 150px;
+}
+
+.servico .servico-box-a h3 {
+    color: var(--cor-botao);
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.servico .servico-box-a p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+/* ---------------------------------------------------------------------------------- */
+
+
+/* Estilo da Secção de SOBRE */
+.sobre {
+    padding: 125px 0px 50px 0px;
+    /* background-color: aqua; */
+}
+
+.sobre .sobre-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 30px;
+}
+
+.sobre .sobre-box-a {
+    display: flex;
+    padding: 15px 0;
+    margin: 10px 0;
+    transition: .5s ease;
+}
+
+/* .sobre .sobre-box-a:hover {
+    transform: scale(1.03);
+} */
+
+.sobre .sobre-box-a .sobre-txt-a h3 {
+    color: var(--cor-botao);
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sobre .sobre-box-a .sobre-txt-a p {
+    color: var(--cor-sub-titulo);
+}
+
+.sobre .sobre-container-b .sobre-box-a .sobre-txt-b h3 {
+    color: var(--cor-botao);
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sobre .sobre-container-b .sobre-box-a .sobre-txt-b p {
+    color: var(--cor-sub-titulo);
+}
+
+.sobre .sobre-container .sobre-container-a .sobre-txt-a {
+    text-align: end;
+}
+
+.sobre .sobre-box-a .sobre-img-a img {
+    width: 100px;
+}
+
+.sobre .sobre-img-principal {
+    text-align: center;
+}
+
+.sobre .sobre-img-principal img {
+    width: 220px;
+    border-radius: 12px;
+    transition: .8s ease;
+}
+
+.sobre .sobre-img-principal img:hover {
+    transform: scale(1.2);
+}
+/* ---------------------------------------------------------------------------------- */
+
+
+/* Estilo da Secção de PORTFOLIO */
+.portfolio {
+    padding: 100px 0;
+    /* background-color: #adee93; */
+}
+
+.portfolio .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 20px;
+}
+
+.portfolio .portfolio-box {
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+
+    /* O overflow hidden fez com que o div tomasse a porpoção da descricão do proprio projecto */
+    overflow: hidden;
+    /* box-shadow: 0 0 10px var(--cor-botao); */
+}
+
+.portfolio .portfolio-box img {
+    width: 100%;
+    transition: .5s ease;
+}
+
+.portfolio .portfolio-box img:hover {
+    transform: scale(1.1);
+}
+
+.portfolio .portfolio-descricacao {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(73, 69, 69, 0.1), var(--cor-botao));
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    padding: 0 30px;
+
+    transform: translateX(100%);
+    transition: .9s ease;
+}
+
+.portfolio .portfolio-box:hover .portfolio-descricacao{
+    transform: translateX(0%);
+}
+
+.portfolio .portfolio-descricacao h3 {
+    font-size: 25px;
+    color: var(--cor-branca);
+}
+
+.portfolio .portfolio-descricacao p {
+    margin: 10px 0;
+}
+
+.portfolio .portfolio-descricacao a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 35px;
+    height: 35px;
+
+    background-color: var(--cor-branca);
+    border-radius: 50%;
+}
+
+.portfolio .portfolio-descricacao img {
+    width: 25px;
+}
+/* ---------------------------------------------------------------------------------- */
+
+
+/* Estilo da Secção de PLANOS */
+.planos {
+    padding: 100px 0;
+    background-color: var(--cor-fundo-especifico);
+}
+
+.planos .planos-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.planos .planos-box {
+    color: var(--cor-branca);
+    text-align: center;
+    padding: 40px 0;
+    width: 100%;
+    border-radius: 6px;
+    transition: .5s;
+    box-shadow: 0 0 10px var(--cor-botao);
+}
+
+.planos .planos-box:hover {
+    transform: scale(1.03);
+}
+
+.planos .planos-box h3 {
+    font-size: 23px;
+}
+
+.planos .planos-box h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.planos .planos-box ul li {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.planos .planos-box .btn-aderir button {
+    margin-top: 20px;
+}
+/* ---------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Estilo da Secção de CONTAGEM */
+.contagem {
+    padding: 100px 0;
+    background-image: url(../imagens/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--cor-branca);
+    /* propriedade para deixar a imagens estática e 
+    ciar o efeit paralax */
+    background-attachment: fixed;
+}
+
+.contagem .contagem-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contagem .contagem-box {
+    text-align: center;
+}
+
+.contagem .contagem-box img {
+    width: 70px;
+    transition: .8s ease;
+}
+
+.contagem .contagem-box img:hover {
+    transform: scale(1.2);
+}
+
+.contagem .contagem-box h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--cor-texto-principal);
+}
+
+.contagem .contagem-box h3 span {
+    display: block;
+}
+
+.contagem .contagem-box p {
+    font-size: 14px;
+}
+/* ---------------------------------------------------------------------------------- */
+
+
+/* Estilo da Secção de CONTAGEM */
+.marcas {
+    padding: 80px 0;
+    /* background-color: var(--cor-fundo); */
+}
+
+.marcas .marcas-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    gap: 20px;
+}
+
+.marcas .marcas-box {
+    text-align: center;
+}
+
+.marcas .marcas-box img {
+    width: 140px;
+    border-radius: 5px;
+    transition: .8s ease;
+}
+
+.marcas .marcas-box img:hover {
+    transform: scale(1.2);
+}
+/* ---------------------------------------------------------------------------------- */
+
+
+/* Estilo da Secção do TEAM */
+.team {
+    text-align: center;
+    background-color: var(--cor-fundo-especifico);
+    padding: 100px 0;
+}
+
+.team .team-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 20px;
+}
+
+.team .team-box .tem-foto-nome img {
+    width: 98%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: .5s ease;
+}
+
+.team .team-box .tem-foto-nome img:hover {
+    transform: scale(1.06);
+}
+
+.team .team-box .tem-foto-nome p {
+    color: var(--cor-texto-principal);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.team .team-box .tem-foto-nome p span {
+    display: block;
+    font-size: 14px;
+    font-weight: 100;
+    color: var(--cor-sub-titulo);
+}
+
+.team .team-box .team-redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.team .team-box .team-redes button {
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--cor-branca);
+    border-radius: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .5s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team .team-box .team-redes button:hover {
+    box-shadow: 0 0 15px var(--cor-botao);
+}
+
+.team .team-box .team-redes {
+    margin-top: 10px;
+}
+
+.team .team-box .team-redes img {
+    width: 14px;
+    text-align: center;
+}
+/* ---------------------------------------------------------------------------------- */
+
+
+/* Estilo da Secção Gostando */
+.gostando {
+    padding: 80px 0;
+    background-image: url(../imagens/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--cor-branca);
+    /* propriedade para deixar a imagens estática e 
+    ciar o efeit paralax */
+    background-attachment: fixed;
+}
+
+.gostando .gostando-container {
+    text-align: center;
+}
+
+.gostando .gostando-container h2 {
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.gostando .gostando-container .btn button {
+    margin-top: 15px;
+}
+/* ---------------------------------------------------------------------------------- */
+
+
+/* Estilo da Secção de Blog */
+.blog {
+    padding: 100px 0;
+    background-color: var(--cor-fundo-especifico);
+}
+
+.blog .blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 30px;
+}
+
+.blog .blog-container .blog-box {
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--cor-fundo);
+    color: var(--cor-branca);
+    transition: .5s ease;
+}
+
+.blog .blog-container .blog-box:hover {
+    transform: scale(1.03);
+}
+
+.blog .blog-container .blog-box img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.blog .blog-container .blog-box h5 {
+    margin: 15px 25px;
+    font-weight: 500;
+}
+
+.blog .blog-container .blog-box h5 span {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.blog .blog-container .blog-box h1 {
+    margin: 10px 25px;
+}
+
+.blog .blog-container .blog-box h1 a {
+    color: var(--cor-texto-principal);
+    font-size: 23px;
+    font-weight: 350;
+}
+/* ---------------------------------------------------------------------------------- */
+
+
+/* Estilo da Secção de Contactos */
+.contacto {
+    padding: 100px 0;
+}
+
+.contacto .contacto-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contacto .contacto-a .contacto-a-box {
+    margin-bottom: 20px;
+}
+
+.contacto .contacto-a .contacto-a-box h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--cor-texto-principal);
+    margin-bottom: 5px;
+}
+
+.contacto .contacto-a .contacto-a-box p {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--cor-sub-titulo);
+}
+
+.contacto .contacto-a .contacto-a-box p span {
+    display: block;
+}
+
+.contacto .contacto-b form {
+    width: 100%;
+}
+
+.contacto .contacto-b form .contacto-b-input {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contacto .contacto-b form .contacto-b-input input,
+.contacto .contacto-b form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    color: var(--cor-branca);
+    background-color: var(--cor-fundo-especifico);
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+    border: none;
+    outline: none;
+}
+
+.contacto .contacto-b form .contacto-b-input input {
+    width: 49%;
+}
+
+.contacto .contacto-b form .contacto-b-input .inp-especial {
+    width: 100%;
+}
+
+.contacto form textarea {
+    resize: none;
+    height: 150px;
+}
+/* ---------------------------------------------------------------------------------- */
+
+
+/* Estilo da Secção de FOOTER */
+footer {
+    width: 100%;
+    /* min-height: 250px; */
+
+    padding: 100px 0;
+    background-image: url(../imagens/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--cor-branca);
+    /* propriedade para deixar a imagens estática e 
+    ciar o efeit paralax */
+    background-attachment: fixed;
+}
+
+/* Estilod quase gerais */
+footer .footer-container {
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    gap: 10px;
+}
+
+footer .footer-box {
+    width: 100%;
+}
+
+footer .footer-box:nth-child(1) {
+    /* width: 500px; */
+    margin-right: 100px;
+}
+
+footer .footer-box:nth-child(4) {
+    width: 400px;
+}
+
+footer .footer-box ul li, a {
+    margin: 10px 0;
+    color: var(--cor-branca);
+    font-weight: 500;
+
+    font-size: 14px;
+}
+
+footer .footer-box p {
+    /* text-align: justify; */
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+/* Estilod quase individuais */
+footer #footer-img-logo {
+    width: 180px;
+    margin-bottom: 20px;
+    transition: .5s ease;
+}
+
+footer #footer-img-logo:hover {
+    transform: scale(1.08);
+}
+
+footer .footer-box .footer-rs ul {
+    display: flex;
+    gap: 10px;
+    
+    margin-top: -15px;
+}
+
+footer .footer-rs img {
+    width: 20px;
+    display: inline;
+    transition: .5s ease;
+}
+
+footer .footer-rs img:hover {
+    transform: scale(1.2);
+}
+
+footer .contacto-flex .local {
+    width: 20px;
+    height: 20px;
+}
+
+footer .footer-box .contacto-flex {
+    display: flex;
+    gap: 3px;
+    margin-bottom: -10px;
+
+}
+
+footer .footer-box .contacto-flex p {
+    font-size: 13px;
+}
+
+.news-latter {
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+footer .enviar-email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .enviar-email button {
+    border-radius: 100px;
+    border: none;
+    transition: .5s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-branca);
+    margin-left: -50px;
+    width: 38px;
+}
+
+footer .enviar-email button img {
+    width: 38px;
+}
+
+footer .footer-box input {
+    color: var(--cor-fundo-especifico);
+    font-size: 16px;
+    font-weight: 450;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--cor-branca);
+
+    outline: none;
+    border: none;
+}
+
+footer .fooert-copy {
+    margin-top: 20px;
+}
+
+footer .fooert-copy p span {
+    color: var(--cor-texto-principal);
+    font-weight: 600;
+}
+
+/* ===================================================== */
+
+.titulo-escuro {
+    color: red;
+}
+
+
+

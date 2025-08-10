@@ -1,0 +1,209 @@
+/* PÁGINA RESPONSÁVEL PELA RESPONSIVIDADE DO SITE */
+
+/* Responsividade em Dispositivos como IPADS E TABLETS */
+@media screen and (max-width: 1130px) {
+    /* Responsividade Aplicada a Scecção HEADER*/
+    header .menu-desktop {
+        display: none;
+    }
+    
+    header .btn-contacto .btn-geral {
+        display: none;
+    }
+
+    /* Rsponsividade Aplicada a Secção de SERVIÇOS */
+    .servico .servico-container-a {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Responsividade Aplicada a Secção de SOBRE */ 
+    .sobre .sobre-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .sobre .sobre-box-a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Responsividade Aplicada a Secção de PORTFOLIO */
+    .portfolio .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio .portfolio-descricacao h3 {
+        font-size: 20px;
+    }
+    
+    .portfolio .portfolio-descricacao p {
+        font-size: 13px;
+    }
+
+    /* Responsividade Aplicada a Secção de PLANOS */  
+    .planos .planos-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Responsividade Aplicada a Secção de CONTAGEM */
+    /* .contagem .contagem-box img {
+        width: 60px;
+    } */
+
+    .contagem .contagem-box h3 {
+        font-size: 16px;
+    }
+
+    /* Responsividade Aplicada a Secção de MARCAS */
+    .marcas .marcas-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .marcas .marcas-box img {
+        margin-bottom: 10px;
+    }
+
+    /* Responsividade Aplicada a Secção do TEAM */
+    .team .team-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Responsividade Aplicada a Secção do BLOG */
+    .blog .blog-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Responsividade Aplicada a Secção de CONTACTOS */
+    .contacto .contacto-container {
+        display: block;
+    }
+
+    /* Responsividade Aplicada a Secção do FOOTER */
+    footer .footer-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer .footer-box:nth-child(1) {
+        width: 240px;
+    }
+
+    footer .footer-box:nth-child(4) {
+        width: 250px;
+    }
+
+}
+
+/* Responsividade em Dispositivos como IPADS E TABLETS NÚMERO 02*/
+@media screen and (max-width:750px) {
+    /* Responsividade Aplicada a Scecção HOME*/
+    main .home .home-texto h1 {
+        font-size: 2.5em;
+        line-height: 50px;
+    }
+}
+
+/* Responsividade em Dispositivos MÓVEIS como TELEFONES */
+@media screen and (max-width:640px) {
+    /* Responsividade Aplicada ao HEADER */
+    header .logo img {
+        max-width: 135px;
+    }
+
+    header .dark-mode button {
+        width: 35px;
+        height: 35px;
+    }
+    
+    header .dark-mode img {
+        width: 15px;
+    }
+
+    /* Responsividade Aplicada a Scecção Main do HOME */
+    main .home .home-texto h1 {
+        font-size: 1.4em;
+        line-height: 35px;
+    }
+
+    main .home .home-texto p .call {
+        margin-top: 16px;
+    }
+
+    main .home .home-texto .btn-geral {
+        font-size: 15px;
+    }
+
+    /* Rsponsividade Aplicada a Secção de SERVIÇOS */
+    .servico .servico-container-a {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Responsividade Aplicada a Secção de PORTFOLIO */
+    .portfolio .portfolio-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Responsividade Aplicada a Secção de PLANOS */  
+    .planos .planos-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Responsividade Aplicada a Secção de CONTAGEM */
+    .contagem .contagem-container {
+        display: block;
+    }
+
+    .contagem .contagem-box {
+        margin-bottom: 50px;
+    }
+
+    .contagem .contagem-box h3 {
+        font-size: 20px;
+    }
+
+    /* Responsividade Aplicada a Secção de MARCAS */
+    .marcas .marcas-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .marcas .marcas-box img {
+        margin-bottom: 10px;
+    }
+
+    /* Responsividade Aplicada a Secção do TEAM */
+    .team .team-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    /* Responsividade Aplicada a Secção do BLOG */
+    .blog .blog-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Responsividade Aplicada a Secção de CONTACTOS */
+    .contacto .contacto-b form .contacto-b-input input {
+        width: 100%;
+    }
+
+    /* Responsividade Aplicada a Secção de FOOTER */
+    footer .footer-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer .footer-box:nth-child(1) {
+        width: 350px;
+    }
+
+    footer .footer-box:nth-child(4) {
+        width: 450px;
+    }
+
+    footer #footer-img-logo {
+        width: 135px;
+    }
+
+    /* footer .fooert-copy {
+        text-align: center;
+    } */
+
+}

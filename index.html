@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- links dos Arquivos cass -->
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\responsividade.css">
+
+    <!-- Link do Arquivo Java Script -->
+    <script src="js/js.js" defer></script>
+
+    <title>Tuyene Comesso</title>
+</head>
+<body>
+    <!-- CABEÇALHO DO SITE -->
+    <header class="header" id="header">
+        <!-- div interface para delimitar o site -->
+        <div class="interface">
+            <!-- logo do site -->
+            <section class="logo">
+                <a href="#">
+                    <!-- logo A -->
+                    <img class="logo-A" src="imagens/logo.png" alt="Logo do Site">
+                    <!-- logo B -->
+                    <!-- <img class="logo-B" src="imagens/logo.png" alt="Logo do Site"> -->
+                </a>
+            </section>
+
+            <!-- secção ou barra de navegação do site -->
+            <section class="menu-desktop">
+                <nav>
+                    <ul>
+                        <li><a class="activa" href="#home">Home</a></li>
+                        <li><a href="#servico">Serviços</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="#planos">Planos</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <!-- <li><a href="#menu">Menu</a></li> -->
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <!-- botão de contatos -->
+            <section class="btn-contacto">
+                <a href="#contacto">
+                    <button class="btn-geral">Contacto</button>
+                </a>
+            </section>
+
+            <!-- botão de alternancia de tema, dark (branco) e mode (escuro) -->
+            <section class="dark-mode">
+                <button id="btn-dark-mode">
+                    <img src="imagens/lua-oficial.png" class="modo-escuro-lua" alt="Modo Escuro">
+                    <img src="imagens/sol-oficial.png" class="modo-claro-sol" alt="Modo Claro">
+                </button>
+            </section>
+
+        </div>
+    </header>
+
+    <!-- CONTEÚD PRINCIAL DO SITE -->
+    <main>
+        <!-- Secç~so do home -->
+        <section class="home" id="home">
+            <!-- interface -->
+            <div class="interface">
+                <div class="home-texto">
+                    <h1>Seja muito bem vindo(a) a família <span>Techno Informação IT</span></h1>
+                    <p>
+                        O local onde encontras tudo o que quizeres sobre tecnologia e informação 
+                        <!-- com um orçamento que cabe no seu bolso -->
+                        <span class="call">CALL CENTER: +244 900 900 000</span>
+                    </p>
+
+                    <!-- Botão de Ver quem Somos -->
+                    <!-- <a href="#">
+                        <button >
+                            Entrar em contacto
+                        </button>
+                    </a> -->
+
+                    <!-- botão de contatos -->
+                    <section>
+                        <a href="#contacto">
+                            <button class="btn-geral">Entrar em contacto</button>
+                        </a>
+                    </section>
+
+                </div>
+            </div>
+
+            <!-- Class overlay para escurecer um pouco a imagem e torna-la mas agradavel -->
+            <!-- <div class="overlay"></div> -->
+        </section>
+
+        <!-- Secção de serviços -->
+        <section class="servico" id="servico">
+            <!-- div interface para limitar o site -->
+            <div class="interface">
+                <!-- título e subtitulo do site -->
+                <div class="titulo-subtitulo">
+                    <h2 class="titulo">Serviços</h2>
+                    <p class="sub-titulo" id="sub-titulo">Conheça nossos serviços<p>
+                </div>
+
+                <!-- containner A onde ficaram todos os serviços A -->
+                <div class="servico-container-a">
+                    <!-- Serviço número 01 -->
+                    <div class="servico-box-a">
+                        <img src="imagens/Servicos/service-cloud.png" alt="">
+                        <h3>Application Design</h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Quas repellendus eaque id iure?
+                        </p>
+                    </div>
+
+                    <!-- Serviço número 02 -->
+                    <div class="servico-box-a">
+                        <img src="imagens/Servicos/service-hosting.png" alt="">
+                        <h3>Web Hosting</h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Quas repellendus eaque id iure?
+                        </p>
+                    </div>
+
+                    <!-- Serviço número 03 -->
+                    <div class="servico-box-a">
+                        <img src="imagens/Servicos/service-social.png" alt="">
+                        <h3>Social Media</h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Quas repellendus eaque id iure?
+                        </p>
+                    </div>
+
+                    <!-- Serviço número 04 -->
+                    <div class="servico-box-a">
+                        <img src="imagens/Servicos/service-seo.png" alt="">
+                        <h3>SEO Optimization</h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Quas repellendus eaque id iure?
+                        </p>
+                    </div>
+
+                    <!-- Serviço número 05 -->
+                    <div class="servico-box-a">
+                        <img src="imagens/Servicos/service-cloud.png" alt="">
+                        <h3>Cloud Server</h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Quas repellendus eaque id iure?
+                        </p>
+                    </div>
+
+                    <!-- Serviço número 06 -->
+                    <div class="servico-box-a">
+                        <img src="imagens/Servicos/service-secure.png" alt="">
+                        <h3>Data Secuity</h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Quas repellendus eaque id iure?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secção do Sobre -->
+        <section class="sobre" id="sobre">
+            <!-- Interface para delimitar o site -->
+            <div class="interface">
+                <!-- título e subtitulo do site -->
+                <div class="titulo-subtitulo">
+                    <h2 class="titulo">Sobre</h2>
+                    <p class="sub-titulo" id="sub-titulo">Saiba porque nos contratar<p>
+                </div>
+
+                <!-- Container principal onde ficaram todos os elementos -->
+                <div class="sobre-container">
+
+                    <!-- containner A -->
+                    <div class="sobre-container-a">
+                        <!-- Sobre 01 -->
+                        <div class="sobre-box-a">
+                            <!-- texto -->
+                            <div class="sobre-txt-a">
+                                <h3>Missão</h3>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing 
+                                    elit. Dolores, nemo.
+                                </p>
+                            </div>
+
+                            <!-- Imagem -->
+                            <div class="sobre-img-a">
+                                <img src="imagens/Sobre/icon-1.png" alt="Porque nos contratar">
+                            </div>
+                        </div>
+
+                        <!-- Sobre 02 -->
+                        <div class="sobre-box-a">
+                            <!-- texto -->
+                            <div class="sobre-txt-a">
+                                <h3>Visão</h3>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing 
+                                    elit. Dolores, nemo.
+                                </p>
+                            </div>
+
+                            <!-- Imagem -->
+                            <div class="sobre-img-a">
+                                <img src="imagens/Sobre/icon-2.png" alt="Porque nos contratar">
+                            </div>
+                        </div>
+
+                        <!-- Sobre 03 -->
+                        <div class="sobre-box-a">
+                            <!-- texto -->
+                            <div class="sobre-txt-a">
+                                <h3>Valores</h3>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing 
+                                    elit. Dolores, nemo.
+                                </p>
+                            </div>
+                            
+                            <!-- Imagem -->
+                            <div class="sobre-img-a">
+                                <img src="imagens/Sobre/icon-3.png" alt="Porque nos contratar">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagem principal que representa a Secção d Sobre -->
+                    <div class="sobre-img-principal">
+                        <img src="imagens/Sobre/features.jpg" alt="Porque nos contratar">
+                    </div>
+
+                    <!-- containner B -->
+                    <div class="sobre-container-b">
+                        <!-- Sobre 04 -->
+                        <div class="sobre-box-a">
+                            <!-- Imagem -->
+                            <div class="sobre-img-a">
+                                <img src="imagens/Sobre/icon-4.png" alt="Porque nos contratar">
+                            </div>
+
+                            <!-- texto -->
+                            <div class="sobre-txt-b">
+                                <h3>Objectivo</h3>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing 
+                                    elit. Dolores, nemo.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Sobre 05 -->
+                        <div class="sobre-box-a">
+                            <!-- Imagem -->
+                            <div class="sobre-img-a">
+                                <img src="imagens/Sobre/icon-5.png" alt="Porque nos contratar">
+                            </div>
+
+                            <!-- texto -->
+                            <div class="sobre-txt-b">
+                                <h3>Metas</h3>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing 
+                                    elit. Dolores, nemo.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Sobre 06 -->
+                        <div class="sobre-box-a">
+                            <!-- Imagem -->
+                            <div class="sobre-img-a">
+                                <img src="imagens/Sobre/icon-6.png" alt="Porque nos contratar">
+                            </div>
+
+                            <!-- texto -->
+                            <div class="sobre-txt-b">
+                                <h3>Interesse</h3>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing 
+                                    elit. Dolores, nemo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Secção de Portfolio -->
+        <section class="portfolio" id="portfolio">
+            <!-- interface para delimitar o site -->
+            <div class="interface">
+                <!-- título e subtitulo do site -->
+                <div class="titulo-subtitulo">
+                    <h2 class="titulo">Portfólio</h2>
+                    <p class="sub-titulo">Conheça nossos projectos<p>
+                </div>
+
+                <!-- Container nde ficram todos os prjectos -->
+                <div class="portfolio-container">
+                    <!-- Projecto Número 01 -->
+                    <div class="portfolio-box">
+                        <img src="imagens/Portfolio/product-1.jpg" alt="Nossos projectos">
+                        <!-- Descrição do projecto que aparecerá com o passar do mouse -->
+                        <div class="portfolio-descricacao">
+                            <h3>All</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Quis nam debitis dolore voluptatibus a nisi!
+                            </p>
+                            <a href="#"><img src="imagens/ver-mas.png" alt="Descrição Geral do Projecto"></a>
+                        </div>
+                    </div>
+
+                    <!-- Projecto Número 02 -->
+                    <div class="portfolio-box">
+                        <img src="imagens/Portfolio/product-2.jpg" alt="Nossos projectos">
+                        <!-- Descrição do projecto que aparecerá com o passar do mouse -->
+                        <div class="portfolio-descricacao">
+                            <h3>App Design</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Quis nam debitis dolore voluptatibus a nisi!
+                            </p>
+                            <a href="#"><img src="imagens/ver-mas.png" alt="Descrição Geral do Projecto"></a>
+                        </div>
+                    </div>
+
+                    <!-- Projecto Número 03 -->
+                    <div class="portfolio-box">
+                        <img src="imagens/Portfolio/product-3.jpg" alt="Nossos projectos">
+                        <!-- Descrição do projecto que aparecerá com o passar do mouse -->
+                        <div class="portfolio-descricacao">
+                            <h3>App Development</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Quis nam debitis dolore voluptatibus a nisi!
+                            </p>
+                            <a href="#"><img src="imagens/ver-mas.png" alt="Descrição Geral do Projecto"></a>
+                        </div>
+                    </div>
+
+                    <!-- Projecto Número 04 -->
+                    <div class="portfolio-box">
+                        <img src="imagens/Portfolio/product-4.jpg" alt="Nossos projectos">
+                        <!-- Descrição do projecto que aparecerá com o passar do mouse -->
+                        <div class="portfolio-descricacao">
+                            <h3>Branding</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Quis nam debitis dolore voluptatibus a nisi!
+                            </p>
+                            <a href="#"><img src="imagens/ver-mas.png" alt="Descrição Geral do Projecto"></a>
+                        </div>
+                    </div>
+
+                    <!-- Projecto Número 05 -->
+                    <div class="portfolio-box">
+                        <img src="imagens/Portfolio/product-5.jpg" alt="Nossos projectos">
+                        <!-- Descrição do projecto que aparecerá com o passar do mouse -->
+                        <div class="portfolio-descricacao">
+                            <h3>Graphic Design</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Quis nam debitis dolore voluptatibus a nisi!
+                            </p>
+                            <a href="#"><img src="imagens/ver-mas.png" alt="Descrição Geral do Projecto"></a>
+                        </div>
+                    </div>
+
+                    <!-- Projecto Número 06 -->
+                    <div class="portfolio-box">
+                        <img src="imagens/Portfolio/product-6.jpg" alt="Nossos projectos">
+                        <!-- Descrição do projecto que aparecerá com o passar do mouse -->
+                        <div class="portfolio-descricacao">
+                            <h3>It Solutions</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Quis nam debitis dolore voluptatibus a nisi!
+                            </p>
+                            <a href="#"><img src="imagens/ver-mas.png" alt="Descrição Geral do Projecto"></a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Secção dos Testemunhos -->
+        <section class="planos" id="planos">
+            <!-- interface para delimitar o site -->
+            <div class="interface">
+                <!-- título e subtitulo do site -->
+                <div class="titulo-subtitulo">
+                    <h2 class="titulo">Planos</h2>
+                    <p class="sub-titulo">Conheça nossos planos<p>
+                </div>
+
+                <!-- Container dos planos -->
+                <div class="planos-container">
+                    <!-- Box para cada plano -->
+
+                    <!-- Plano 01 -->
+                    <div class="planos-box">
+                        <h3>Básico</h3>
+                        <h2> <sup>$</sup>25</h2>
+
+                        <ul type="">
+                            <li>Personalizado</li>
+                            <li>Email Empresarial</li>
+                            <li>Manutenção Free</li>
+                            <li>2GB de Espaço</li>
+                            <li>Personalizado</li>
+                            <li>Empresarial</li>
+                            <li>Email</li>
+                            <li>Suporte</li>
+                            <li>Manutenção</li>
+                        </ul>
+
+                        <!-- Botão Aderir -->
+                        <div class="btn-aderir">
+                            <a href="#contacto">
+                                <button class="btn-geral">Aderir</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Plano 02 -->
+                    <div class="planos-box">
+                        <h3>Standard</h3>
+                        <h2> <sup>$</sup>50</h2>
+
+                        <ul type="">
+                            <li>Personalizado</li>
+                            <li>Email</li>
+                            <li>Manutenção</li>
+                            <li>2GB de Espaço</li>
+                            <li>Personalizado</li>
+                            <li>Empresarial</li>
+                            <li>Email</li>
+                            <li>Suporte</li>
+                            <li>Manutenção</li>
+                        </ul>
+
+                        <!-- Botão Aderir -->
+                        <div class="btn-aderir">
+                            <a href="#contacto">
+                                <button class="btn-geral">Aderir</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Plano 03 -->
+                    <div class="planos-box">
+                        <h3>Premium</h3>
+                        <h2> <sup>$</sup>100</h2>
+
+                        <ul type="">
+                            <li>Personalizado</li>
+                            <li>Email</li>
+                            <li>Manutenção Free</li>
+                            <li>2GB de Espaço</li>
+                            <li>Personalizado</li>
+                            <li>Empresarial</li>
+                            <li>Email</li>
+                            <li>Suporte</li>
+                            <li>Manutenção</li>
+                        </ul>
+
+                        <!-- Botão Aderir -->
+                        <div class="btn-aderir">
+                            <a href="#contacto">
+                                <button class="btn-geral">Aderir</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Plano 04 -->
+                    <div class="planos-box">
+                        <h3>Super Premium</h3>
+                        <h2> <sup>$</sup>200</h2>
+
+                        <ul type="">
+                            <li>Suporte Personalizado</li>
+                            <li>Email Empresarial</li>
+                            <li>Manutenção Free</li>
+                            <li>2GB de Espaço</li>
+                            <li>Personalizado</li>
+                            <li>Empresarial</li>
+                            <li>Email</li>
+                            <li>Suporte</li>
+                            <li>Manutenção</li>
+                        </ul>
+
+                        <!-- Botão Aderir -->
+                        <div class="btn-aderir">
+                            <a href="#contacto">
+                                <button class="btn-geral">Aderir</button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Secção de Cntagem -->
+        <aside class="contagem" id="contagem">
+            <!-- Interface para delimitar o site -->
+            <div class="interface">
+                <div class="contagem-container">
+                    <!-- Box 01-->
+                    <div class="contagem-box">
+                        <img src="imagens/Contagem/happy-clients.png" alt="">
+                        <h3>332 <span>Clientes Felizes</span></h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <!-- Box 02 -->
+                    <div class="contagem-box">
+                        <img src="imagens/Contagem/complete-projects.png" alt="">
+                        <h3>332 <span>Projectos Concluidos</span></h3>
+                        <p>Lorem ipsum dolor amet.</p>
+                    </div>
+
+                    <!-- Box 03 -->
+                    <div class="contagem-box">
+                        <img src="imagens/Contagem/hours-support.png" alt="">
+                        <h3>332 <span>Horas de Suprte</span></h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Secção das Marcas Associadas -->
+        <aside class="marcas" id="marcas">
+            <!-- Interface para delimitar o site -->
+            <div class="interface">
+                <!-- Box onde ficaram as marcas  -->
+                <div class="marcas-container">
+                    <!-- Box das Marcas -->
+                    <div class="marcas-box"><img src="imagens/Marcas/client-1.png" alt=""></div>
+                    <div class="marcas-box"><img src="imagens/Marcas/client-2.png" alt=""></div>
+                    <div class="marcas-box"><img src="imagens/Marcas/client-3.png" alt=""></div>
+                    <div class="marcas-box"><img src="imagens/Marcas/client-4.png" alt=""></div>
+                    <div class="marcas-box"><img src="imagens/Marcas/client-5.png" alt=""></div>
+                    <div class="marcas-box"><img src="imagens/Marcas/client-6.png" alt=""></div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Secção do Team -->
+        <section class="team" id="team">
+            <!-- Interface para delimitar o site -->
+            <div class="interface">
+                <!-- título e subtitulo do site -->
+                <div class="titulo-subtitulo">
+                    <h2 class="titulo">Team</h2>
+                    <p class="sub-titulo">Conheça nosso team<p>
+                </div>
+                
+                <!-- Div onde ficará todos os itens do tem -->
+                
+                <div class="team-container">
+                    <!-- Elemento 01 -->
+                    <div class="team-box">
+                        <!-- foto e nome -->
+                        <div class="tem-foto-nome">
+                            <img src="imagens/Team/team-1.jpg" alt="Nosso Team">
+                            <p>Agatão Francisco <span>CEO e Mobile Developer</span> </p>
+                        </div>
+                        
+                        <!-- redes socias -->
+                        <div class="team-redes">
+                            <button><img src="imagens/Team/facebook-03.png" alt="Seu Facebook"></button>
+                            <button><img src="imagens/Team/instagram-03.png" alt="Seu instagram"></button>
+                            <button><img src="imagens/Team/linkedin-01.png" alt="Seu Linkedin"></button>
+                        </div>
+                    </div>
+    
+                    <!-- Elemento 02 -->
+                    <div class="team-box">
+                        <!-- foto e nome -->
+                        <div class="tem-foto-nome">
+                            <img src="imagens/Team/team-2.jpg" alt="Nosso Team">
+                            <p>Josefa Alberto <span>Back-End Developer</span> </p>
+                        </div>
+                        
+                        <!-- redes socias -->
+                        <div class="team-redes">
+                            <button><img src="imagens/Team/facebook-03.png" alt="Seu Facebook"></button>
+                            <button><img src="imagens/Team/instagram-03.png" alt="Seu instagram"></button>
+                            <button><img src="imagens/Team/linkedin-01.png" alt="Seu Linkedin"></button>
+                        </div>
+                    </div>
+    
+                    <!-- Elemento 03 -->
+                    <div class="team-box">
+                        <!-- foto e nome -->
+                        <div class="tem-foto-nome">
+                            <img src="imagens/Team/team-3.jpg" alt="Nosso Team">
+                            <p>Rosaltino Sampaio <span>CTO e Front-End Developer</span> </p>
+                        </div>
+                        
+                        <!-- redes socias -->
+                        <div class="team-redes">
+                            <button><img src="imagens/Team/facebook-03.png" alt="Seu Facebook"></button>
+                            <button><img src="imagens/Team/instagram-03.png" alt="Seu instagram"></button>
+                            <button><img src="imagens/Team/linkedin-01.png" alt="Seu Linkedin"></button>
+                        </div>
+                    </div>
+    
+                    <!-- Elemento 04 -->
+                    <div class="team-box">
+                        <!-- foto e nome -->
+                        <div class="tem-foto-nome">
+                            <img src="imagens/Team/team-4.jpg" alt="Nosso Team">
+                            <p>Feliciana Alberto <span>Front-End Developer</span> </p>
+                        </div>
+                        
+                        <!-- redes socias -->
+                        <div class="team-redes">
+                            <button><img src="imagens/Team/facebook-03.png" alt="Seu Facebook"></button>
+                            <button><img src="imagens/Team/instagram-03.png" alt="Seu instagram"></button>
+                            <button><img src="imagens/Team/linkedin-01.png" alt="Seu Linkedin"></button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
+
+        <!-- Secção do Gostando -->
+        <aside class="gostando" id="gostando">
+            <!-- Interface para delimitar o site -->
+            <div class="interface">
+                <!-- Container -->
+                <div class="gostando-container">
+                    <h2>Gostou dos nossos Projectos?</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur 
+                        adipisicing elit. Itaque eligendi porro 
+                        delectus aperiam ducimus molestiae 
+                        laboriosam nobis? Quam, dolores molestias.
+                    </p>
+
+                    <!-- Botã de Contactos -->
+                    <div class="btn">
+                        <a href="#contacto">
+                            <button class="btn-geral">Contactar-nos</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Secção de Blog -->
+        <section class="blog" id="blog">
+            <!-- Interface para delimitar o site -->
+            <div class="interface">
+                <!-- título e subtitulo do site -->
+                <div class="titulo-subtitulo">
+                    <h2 class="titulo">Blogs</h2>
+                    <p class="sub-titulo">Conheça nosso blog<p>
+                </div>
+
+                <!-- Container -->
+                <div class="blog-container">
+                    <!-- Box para cada Notícia do Blog -->
+
+                    <!-- Notícia 01 -->
+                    <div class="blog-box">
+                        <!-- Imagem do blog -->
+                        <div class="blog-img">
+                            <img src="imagens/Blogs/blog-1.jpg" alt="Notícia 01">
+                        </div>
+
+                        <!-- Textos do Blog -->
+                        <div class="texto-blog">
+                            <h5>Domínio & Hospedagem</h5>
+                            <h1> <a href="#">Como comprar o domínio e hospedar o seu web site</a> </h1>
+                            
+                            <h5>Agatão Francisco <span>Fev 1, 2022</span> </h5>
+                        </div>
+                    </div>
+
+                    <!-- Notícia 02 -->
+                    <div class="blog-box">
+                        <!-- Imagem do blog -->
+                        <div class="blog-img">
+                            <img src="imagens/Blogs/blog-2.jpg" alt="Notícia 01">
+                        </div>
+
+                        <!-- Textos do Blog -->
+                        <div class="texto-blog">
+                            <h5>Hospedagem de Sites</h5>
+                            <h1> <a href="#">Como hospedar o seu web site de forma correcta</a> </h1>
+                            
+                            <h5>Rosaltino Sampaio <span>Out 20, 2022</span> </h5>
+                        </div>
+                    </div>
+
+                    <!-- Notícia 03 -->
+                    <div class="blog-box">
+                        <!-- Imagem do blog -->
+                        <div class="blog-img">
+                            <img src="imagens/Blogs/blog-3.jpg" alt="Notícia 01">
+                        </div>
+
+                        <!-- Textos do Blog -->
+                        <div class="texto-blog">
+                            <h5>Marketing</h5>
+                            <h1> <a href="#">Porque o Marketing Digital é Importante</a> </h1>
+                            
+                            <h5>Gomes Alberto <span>Dez 10, 2022</span> </h5>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Secção de Contactos -->
+        <section class="contacto" id="contacto">
+            <!-- Interface para delimitar o site -->
+            <div class="interface">
+                <!-- título e subtitulo do site -->
+                <div class="titulo-subtitulo">
+                    <h2 class="titulo">Contactos</h2>
+                    <p class="sub-titulo">Contacte os nossos serviços<p>
+                </div>
+
+                <!-- Container onde ficara todo -->
+                <div class="contacto-container">
+                    <!-- Forma de Contacto A -->
+                    <div class="contacto-a">
+                        <!-- Emdereço -->
+                        <div class="contacto-a-box">
+                            <h4>Endereço:</h4>
+                            <p>Golfe N° 02 <span>Rua 18 AB, ao lado do Campo</span> </p>
+                        </div>
+
+                        <!-- Telemóvel -->
+                        <div class="contacto-a-box">
+                            <h4>Telemóvel:</h4>
+                            <p>+244 987 765 432 <span>+244 908 876 123</span> </p>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="contacto-a-box">
+                            <h4>E-mail:</h4>
+                            <p>techno.inform@gmail.com <span>infortchono@gmail.com</span> </p>
+                        </div>
+                    </div>
+
+                    <!-- Forma de Contacto B -->
+                    <div class="contacto-b">
+                        <!-- Formuluário obde ficara todos os inputs -->
+                        <form action="#">
+                            <!-- Nome e Email -->
+                            <div class="contacto-b-input">
+                                <input type="text" name="nome" id="" placeholder="Nome*">
+                                <input type="email" name="email" id="" placeholder="Email*">
+                            </div>
+
+                            <!-- Objecto da mensagem -->
+                            <div class="contacto-b-input">
+                                <input type="text" name="objectivo" id="" placeholder="Objectivo" class="inp-especial">
+                            </div>
+
+                            <!-- Textearea para o porque da mensagem -->
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Escreva sua mensagem*"></textarea>
+                            <!-- Div do Botão para enviar mensagem -->
+                            <input type="submit" value="Enviar Mensagem" class="btn-geral">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Secção do Footer -->
+        <footer>
+            <!-- Interface -->
+            <div class="interface">
+                <!-- Container -->
+                <div class="footer-container">
+                    <!-- Box 01 -->
+                    <div class="footer-box" id="footer-box-a">
+                        <!-- <h4 class="footer-titulo">Descrição</h4> -->
+                        <img src="imagens/logo.png" alt="" id="footer-img-logo">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Aut ipsa, 
+                            velit placeat fugit!
+                        </p>
+
+                        <h4 class="footer-titulo">Redes sociais</h4>
+                        <div class="footer-rs">
+                            <ul>
+                                <li><a href="#"><img src="imagens/Redes-Sociais/facebook_50.png" alt=""></a></li>
+                                <li><a href="#"><img src="imagens/Redes-Sociais/instagram_50.png" alt=""></a></li>
+                                <li><a href="#"><img src="imagens/Redes-Sociais/linkedin_50.png" alt=""></a></li>
+                                <li><a href="#"><img src="imagens/Redes-Sociais/twitter_50px.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Box 02 -->
+                    <div class="footer-box">
+                        <h4 class="footer-titulo">Serviços</h4>
+                        <ul>
+                            <li>Web Design</li>
+                            <li>App Development</li>
+                            <li>Cloud Serviços</li>
+                            <li>Domain And Hosting</li>
+                            <li>Seo Optimization</li>
+                            <li>Social Media</li>
+                        </ul>
+                    </div>
+
+                    <!-- Box 03 -->
+                    <div class="footer-box">
+                        <h4 class="footer-titulo">Informações</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#servico">Serviços</a></li>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#portfolio">Portfólio</a></li>
+                            <li><a href="#planos">Planos</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contacto">Contactos</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Box 04 -->
+                    <div class="footer-box">
+                        <h4 class="footer-titulo">Contactos</h4>
+                        <ul>
+                            <li class="contacto-flex">
+                                <img src="imagens/Localizacao/localizacoa_50px.png" alt="" class="local">
+                                <p>Golfe 02, Rua 18 AB</p>
+                            </li>
+
+                            <li class="contacto-flex">
+                                <img src="imagens/Localizacao/phone_50px.png" alt="" class="local">
+                                <p>+244 987 765 432</p>
+                            </li>
+
+                            <li class="contacto-flex">
+                                <img src="imagens/Localizacao/email_50px.png" alt="" class="local">
+                                <p>techno.inform@gmail.com</p>
+                            <li>
+                        </ul>
+
+                        <h4 class="footer-titulo">News latter</h4>
+                        <p class="news-latter">
+                            Lorem ipsum, dolor sit consectetur 
+                            adipisicing ad!
+                        </p>
+                        <!-- Envia Email -->
+                        <div class="enviar-email">
+                            <!-- Local onde o usuário ira escrever -->
+                            <input type="text" name="NewsLatter" id="" placeholder="Enviar email">
+
+                            <!-- Botão para enviar -->
+                            <a href="#">
+                                <button> <img src="imagens/enviar-email.png" alt=""> </button>
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <!-- Todos os Direitos Reservados -->
+                <div class="fooert-copy">
+                    <p> &copy; Techno IT 2025 - <span>Todos os direitos resevados</span></p>
+                </div>
+
+            </div>
+        </footer>
+        
+    </main>
+
+</body>
+</html>
