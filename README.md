@@ -1,7 +1,6 @@
 # 💻 Tecno IT 
 
-Essa é uma landing page 100% focada no front-end, desenvolvida como parte de um desafio proposto pelo **Agatão Francisco**.  
-O desafio consistia em **recriar** uma landing page que ele já havia me passado, aplicando as tecnologias que mais domino: **HTML, CSS e JavaScript**.  
+Essa é uma landing page 100% focada no front-end, desenvolvida como parte de um desafio proposto pelo [@agataofrancisco](https://github.com/agataofrancisco). O desafio consistia em **recriar** uma landing page que ele já havia me passado, aplicando as tecnologias que mais domino: **HTML, CSS e JavaScript**.  
 Foi uma experiência que abracei com muito entusiasmo. E, o resultado é uma landing page totalmente **responsiva**, que se adapta a qualquer tipo de tela.
 
 ## 💻 Tecnologias Utilizadas
