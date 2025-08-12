@@ -13,7 +13,10 @@ Foi uma experiência que abracei com muito entusiasmo. E, o resultado é uma lan
 - Google Chrome
 - Mobile Simulador Responsivo 
 
-Durante o desenvolvimento pude aprimorar minhas habilidades em **CSS**, especialmente em **Grid Layout** e **Flexbox**, recursos essenciais para criar layouts modernos e eficientes.  
+Durante o desenvolvimento pude aprimorar minhas habilidades em **CSS**, especialmente em **Grid Layout** e **Flexbox**, recursos essenciais para criar layouts modernos e eficientes. 
+
+## ⚠️ Atenção
+O projeto ainda está em fase de desenvolvimento, com melhorias e novas atualizações a caminho.
 
 ## 🔗 Links do Projeto
 - **Repositório no GitHub:** https://github.com/gomes-alberto/techno-it  
