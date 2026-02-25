@@ -20,5 +20,9 @@ O projeto ainda está em fase de desenvolvimento, com melhorias e novas atualiza
 
 ## 🔗 Links do Projeto
 - **Repositório no GitHub:** https://github.com/gomes-alberto/techno-it  
-- **Demonstração online:** https://gomes-alberto.github.io/techno-it/  
+- **Demonstração online:** https://gomes-alberto.github.io/techno-it/
+
+---
+
+Feito com 💙 por **Gomes Alberto**
 
